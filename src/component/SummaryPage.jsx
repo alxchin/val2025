@@ -33,7 +33,7 @@ function SummaryPage() {
           />
         )}
       </div>
-      <p> I love you! ❤️ Hope you enjoyed this little site</p>
+      <p> I love you! ❤️ Hope you enjoyed this little site :3 </p>
     </div>
   );
 }

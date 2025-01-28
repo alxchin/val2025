@@ -1,0 +1,71 @@
+
+body {
+  background-color: #f5f5dc; /* Beige background color */
+  margin: 0;
+  font-family: Arial, sans-serif; /* Optional: change font */
+  padding: 0;
+}
+/* General styles for the calendar page */
+.calendar-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar-page h1 {
+  padding-top: 3rem;
+  font-size: 3rem;
+  color: rgb(245, 146, 163);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Container for the date input and button */
+.calendar-input-container {
+  display: flex;
+  align-items: center; /* Aligns the input and button on the same line */
+  gap: 10px; /* Adds space between the input and button */
+}
+
+/* Styling for the date input */
+.calendar-input-container input[type="date"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 220px;
+  box-sizing: border-box;
+}
+
+/* Styling for the submit button */
+.calendar-input-container .styled-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: pink;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.calendar-input-container .styled-button:hover {
+  background-color: rgb(212, 100, 119);
+}
+
+/* Optional: Add responsiveness for smaller screens */
+@media (max-width: 600px) {
+  .calendar-page h1 {
+    font-size: 20px;
+  }
+
+  .calendar-input-container {
+    flex-direction: column; /* Stack the input and button vertically on small screens */
+    align-items: flex-start;
+  }
+
+  .calendar-input-container input[type="date"] {
+    width: 100%; /* Full width for input on smaller screens */
+    margin-bottom: 10px; /* Adds some space below the input */
+  }
+}

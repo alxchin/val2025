@@ -1,0 +1,44 @@
+.food-page {
+    text-align: center;
+    max-width: 85rem;
+}
+  
+.food-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    gap: 7rem;
+}
+  
+.food-options img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s ease, border 0.3s ease;
+}
+  
+.food-options img:hover {
+    transform: scale(1.05);
+}
+  
+.food-item {
+    text-align: center;
+    width: 150px;
+    border: 4px solid transparent;  /* Increase border thickness for better visual effect */
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+  
+.food-title {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+}
+
+.food-item.selected {
+    border-color: #4CAF50;  /* Green color for selected item */
+    background-color: rgba(76, 175, 80, 0.2);  /* Light green background */
+    width: 250px
+}
